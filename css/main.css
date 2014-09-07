@@ -1,0 +1,994 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #222;
+}
+
+html {
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Blocktech custom styles
+   ========================================================================== */
+body, html { margin: 0; padding: 0;}
+body { 
+	color: #464646;
+	border-top: 8px solid #92b4c6;
+}
+html, button, input, select, textarea, h1, h2, h3, h4, p {
+	font-family: Avenir-Book, avenir, 'Open Sans', open_sansregular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+img {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+}
+h1, h2, h3, h4 {
+	text-align: center;
+}
+h1 {
+	font-size: 1.65em;
+	margin-top: 0;
+	color: #444;	
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	line-height: 1.65;
+}
+#logo {
+	max-width: initial;
+	min-height: 230px;
+	max-height: 370px;
+	margin: 1em auto 2em;
+}
+h2, h3, h4, .teamMember .name {
+	color: #242424;
+}
+h2 {
+	margin: 1.5em 0 0;
+}
+#hero h2 {
+	margin: 4em 0;
+}
+h3 {
+	margin: 1em 0 2em;
+	font-size: 1.125em;
+}
+header h3 {
+	font-style: italic;
+}
+h4 {
+	font-size: .9em;
+}
+p {
+	margin: 0 0 1em;
+	text-align: left;
+}
+section {
+	margin-right: auto;
+	margin-left: auto;
+	clear: both;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #DEDEDE;
+	border-bottom: 1px solid rgba(0,0,0,0.13);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	position: relative;
+	width: 90%;
+}
+section header, #define, #knowledge .column {
+	margin: 0 auto;
+}
+section header.fullwidth {
+	max-width: 100%;
+}
+section header p {
+	text-align: center;
+}
+section .icon-wrap, section .column p {
+	text-align: center;
+}
+
+#hero {
+	padding: 0;
+}
+#menu {
+	margin-bottom: 3em;
+}
+#menu ul {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+#menu ul li {
+	margin: 0;
+	padding: 0;
+}
+#menu ul li a, #totop a {
+	text-decoration: none;
+	font: 600 1.125em 'Josefin Sans', sans-serif;
+	text-transform: uppercase;
+	color: #666;
+	letter-spacing: 2px;
+	margin: 10px 0;
+	padding: 0 2px .25em 2px;
+	display: inline-block;
+	zoom:1;*display:inline;
+	text-align: center;
+	line-height: 1;
+	white-space: nowrap;
+	border-bottom: 1px solid transparent;
+}
+#menu ul li a:hover, #totop a:hover {
+	border-bottom: 1px dashed #666;
+}
+#menu ul li:first-child a {
+	margin-left:0;
+}
+#hero {
+	margin-top: -8px;
+}
+#define p {
+ text-align:left;
+}
+#define .word {
+	font-weight: bold;
+}
+#social-icons {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;	
+}
+#social-icons li {
+	display: inline-block;
+	zoom: 1;*display:inline;	
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+}
+#social-icons li a {
+	margin: 0 0 1.6em 1em;
+	display: block;
+	width: 1.3em;
+	height: 1.3em;
+	color: #b0b0b0;
+	text-decoration: none;
+	font-size: 1.3em;
+}
+#social-icons li:first-child a {
+	margin-left: 0;
+}
+#social-icons li a:hover {
+	color: #242424;
+}
+#social-icons li a span {
+	color: transparent;
+}
+#mc_embed_signup_2 .mc-field-group input {
+	display: block;
+	width: 100%;
+	padding: 8px 0;
+	text-indent: 2%;
+}
+#mc_embed_signup_2 .button {
+	clear: both;
+	background-color: #aaa;
+	border: 0 none;
+	border-radius: 4px;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: bold;
+	height: 32px;
+	line-height: 32px;
+	margin: 0 5px 10px 0;
+	padding: 0 22px;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: top;
+	white-space: nowrap;
+	width: auto;
+}
+#hero #mc_embed_signup form, #mc_embed_signup_2 form {
+	margin: 0;
+	padding: 0;
+}
+#hero #mc_embed_signup .mc-field-group, #mc_embed_signup_2 .mc-field-group {
+	width: auto;
+	float: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#mc_embed_signup_2 form {
+	margin-top: 2em;
+}
+#mc_embed_signup_2 .mc-field-group label {
+	margin: 0 0 1em;
+	display: block;
+	font-style: italic;
+	margin-right: .5em;
+}
+#hero #mc_embed_signup .mc-field-group input, #mc_embed_signup_2 .mc-field-group input {
+	display:inline-block;
+	zoom: 1;*display:inline;
+	width: auto;
+	margin: 0 .5em 1em;
+	border: 1px solid #b0b0b0;
+}
+#hero #mc_embed_signup .mc-field-group input[type="email"], #mc_embed_signup_2 .mc-field-group input[type="email"] {
+	width: 15em;
+}
+#hero #mc_embed_signup .mc-field-group input.button, #mc_embed_signup_2 .mc-field-group input.button {
+	height: 2.65em;
+	margin: 0;
+	padding: 4px 12px;
+	background-color: #b0b0b0;
+	border: 0 none transparent;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	color: #fff;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+#hero #mc_embed_signup .mc-field-group input.button:hover, #mc_embed_signup_2 .mc-field-group input.button:hover {
+	background-color: #242424;
+}
+.icon-wrap img {
+	margin: 1em 0 0;
+}
+.productDetail h3 {
+	margin: .5em 0 0;
+}
+.productDetail h4 {
+	margin: 0 0 1em;
+}
+#liberdade div.smallTitle {
+	width: 100%;
+	text-align: center;
+	font-style: italic;
+}
+section #thecoins {
+	margin: 3em 0 0;
+}
+section #thecoins header h3, section #thecoins header h4 {
+	margin: 0;
+	font-size: 0.875em;
+}
+section #thecoins ul, section #thecoins ul li {
+	list-style: none;
+	display: inline-block;
+	zoom:1;*display:inline;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+}
+section #thecoins ul {
+	text-align: center;
+	width: 100%;
+	margin: 1em 0;
+	position: relative;
+}
+section#jobs {
+	border-bottom: 0 none transparent;
+}
+#team ul {
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	padding: 0;
+	list-style-type:none;
+	text-align: center;
+}
+#team ul.teamList {
+	margin-top: 2em;
+}
+
+.teamList {
+	font-size: .875em;
+}
+.teamList > li, section #thecoins ul li {
+	width: 49%;
+	display: inline-block;
+	zoom: 1;*display:inline;
+	vertical-align: bottom;
+	margin: 1em 0 2em;
+	padding: 0 1px;
+}
+section #thecoins ul li {
+	margin: 1em 0;
+	width: 100%;
+	position: relative;
+}
+section#team header {
+	position: relative;
+}
+section #thecoins ul li p, section#team header p {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin-top: -1em;
+	margin-left:-25%;
+	padding: .5em 1em;
+	background-color: #fff;
+	border: 2px solid #92b4c6;
+	z-index: 500;
+	width: 260px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	text-align: center;
+	box-shadow: 2px 2px 1px rgba(20,20,20,.25);
+	-moz-box-shadow: 2px 2px 1px rgba(20,20,20,.25);
+	-webkit-box-shadow: 2px 2px 1px rgba(20,20,20,.25);
+}
+section #thecoins ul li p {
+	left: 15%;
+	margin-left: -2.5%;
+}
+
+section#team header p {
+	width: 100%;
+	top: 3em;
+	left: 0;
+	margin: 0;
+}
+section #thecoins ul li:hover > p, section#team header:hover > p {
+	display: block;
+}
+.teamMember {
+	text-align: center;
+}
+.teamMember .name {
+	font-size: 1.2em;
+}
+#team .avatar {
+	margin-bottom: .5em;
+}
+@-webkit-keyframes grayscale { 
+    0 { -webkit-filter:grayscale(100%); }  
+	100% { -webkit-filter:grayscale(0); }
+}
+@-moz-keyframes grayscale { 
+    0 { -moz-filter:grayscale(100%); }  
+	100% { -moz-filter:grayscale(0); }
+}
+
+@-o-keyframes grayscale { 
+    0 { -o-filter:grayscale(100%); }  
+	100% { -o-filter:grayscale(0); }
+}
+
+@-ms-keyframes grayscale { 
+    0 { -ms-filter:grayscale(100%); }  
+	100% { -ms-filter:grayscale(0); }
+}
+
+#team .avatar img {
+	width: 100%;
+	max-width: 120px;
+	height: auto;
+	margin: 0;
+	padding: 1px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ddd;
+	border-color: rgba(0,0,0,0.13);
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+}
+#team .avatar img:hover {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	animation: grayscale 1s ease-in-out;
+	-webkit-animation: grayscale 1s ease-in-out;
+	-moz-animation: grayscale 1s ease-in-out;
+	-ms-animation: grayscale 1s ease-in-out;
+	-o-animation: grayscale 1s ease-in-out;
+}
+.teamMeta1,
+.teamMeta2,
+.teamMeta3,
+.teamMeta4
+{
+	display: none;
+}
+#knowledge {
+	text-align: center;
+}
+#knowledge .column {
+	margin: 0 auto 1em;
+	overflow: hidden;
+	display: inline-block;
+	zoom:1;*display:inline;
+	vertical-align: top;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 0 1em;
+}
+#knowledge h3 {
+	margin: 1em 0;
+}
+#knowledge .column .icon-wrap {
+	margin-bottom: 1em;
+}
+footer {
+	width: 100%;
+	float: left;
+	margin-top: 2em;
+	padding: 1.25em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background: #242424;
+	color: #ccc;
+	text-align: center;
+	border-top: 4px solid #92b4c6;
+}
+footer p {
+	font-size: 0.875em;
+	margin: 0;
+	text-align: center;
+}
+#totop {
+	position: fixed;
+	bottom: .55em;
+	right: 1em;
+	z-index: 1000;
+	font-size: .875em;
+	border: 1px solid rgba(0,0,0,0.13);
+	background: rgba(255,255,255,.8);
+}
+#totop a {
+	letter-spacing: normal;
+	background: url('/img/arrow_sans_up_32.png') no-repeat center center transparent;
+	color: transparent;
+	width: 32px;
+	height: 32px;
+	opacity: .25;
+	margin: .25em;
+	border: 0 none transparent;
+}
+#totop a:hover {
+	opacity: .8;
+	border: 0 none transparent;
+}
+/* BUTTONS */
+.wsite-button {
+	display: inline-block;
+	zoom:1;*display:inline;
+	padding: 7px 12px;
+	background: #b0b0b0;
+	color: #fff;
+	font-weight: normal;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	border-radius: 2px;
+	transition: background 0.1s ease-in-out;
+	-webkit-transition: background 0.1s ease-in-out;
+	-moz-transition: background 0.1s ease-in-out;
+	-ms-transition: background 0.1s ease-in-out;
+	-o-transition: background 0.1s ease-in-out;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.wsite-button.secondary {
+	background-color: #92b4c6;
+	box-shadow: 0px 3px 0px 0px #3293ba;
+	-moz-box-shadow: 0px 3px 0px 0px #3293ba;
+	-webkit-box-shadow: 0px 3px 0px 0px #3293ba;
+	margin-top: .5em;
+}
+.wsite-button:hover, .wsite-button.secondary:hover {
+	background: #242424;
+	color:#fff;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.tabled {
+	display: table;
+}
+.table-row {
+	display: table-row;
+}
+.vcentered {
+	display: table-cell;
+	vertical-align: middle;
+}
+section .vcentered {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.smallTitle {
+	font-size: .875em;
+}
+/*
+ * Image replacement
+ */
+
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
+}
+
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *	`contenteditable` attribute is included anywhere else in the document.
+ *	Otherwise it causes space to appear at the top and bottom of elements
+ *	that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *	`:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+	*zoom: 1;
+}
+.anchor {
+	position: absolute;
+	top: -2em;
+	left: 0;
+}
+/* Responsive Design */
+@media only screen and (min-width: 260px) and (max-width: 378px) {
+	section {
+		width: 90%;
+	}
+	section #thecoins ul li p {
+		left:5%;
+		width: 95%;
+	}
+	#logo {
+		width: 40%;
+		min-height: 0;
+		max-height: 100%;
+		height: auto;
+	}
+	#social-icons li a {
+		margin: 0 0 1.6em .5em;
+	}
+}
+@media only screen and (min-width: 379px) {
+	section {
+		width: 340px;
+	}
+}
+@media only screen and (min-width: 479px) {
+	h1 {
+		font-size: 1.7em;
+	}
+	section {
+		width: 465px;
+		padding-right: 2em;
+		padding-left: 2em;
+	}
+	#social-icons li a {
+		margin: 0 0 1.6em 1.8em;
+	}
+}
+@media only screen and (min-width: 559px) {
+	section {
+		width: 540px;
+	}
+	section #thecoins ul li {
+		margin: 1em 0;
+		width: 48%;
+		position: relative;
+	}	
+	section #thecoins ul li p {
+		margin-left: -5%;
+		left: 0;
+	}
+}
+@media only screen and (min-width: 599px) {
+	section header, #define, #knowledge .column {
+		max-width: 100%;
+	}
+	#hero #mc_embed_signup .mc-field-group input[type="email"], #mc_embed_signup_2 .mc-field-group input[type="email"] {
+		width: 20em;
+	}
+	.teamList > li, section #thecoins ul li {
+		width: 32%;
+	}
+	section #thecoins ul li p {
+		margin-left: -35%;
+	}
+}
+@media only screen and (min-width: 709px) {
+	section {
+		width: 670px;
+	}
+	section #thecoins ul li p {
+		margin-left:-15%;
+	}
+}
+@media only screen and (min-width: 800px) {
+	section {
+		width: 755px;
+	}
+	h1 {
+		font-size: 1.75em;
+	}
+	#menu ul li {
+		display: inline-block;
+		zoom:1;*display:inline;
+	}
+	#menu ul li a {
+		margin: 0 0 0 2em;
+		font-size: 1em;
+		font-weight: normal;
+	}
+	section #thecoins ul {
+		margin-bottom: 0;
+		position: relative;
+	}
+	section #thecoins ul li {
+		position: initial;
+	}
+	section #thecoins ul li p {
+		width: 540px;
+		padding: 1em .65em;
+		top: 3em;
+		left: 25%;
+		margin-left:-12.5%;
+		margin-top: 0;
+	}
+	section .productDetail {
+		position: relative;
+		margin-top: 3em; 
+	}
+	section #liberdade.productDetail {
+		margin-top: 4em;
+	}
+	#liberdade div.smallTitle {
+		position: absolute;
+		top: -3em;
+	}
+	section .productDetail header {
+		position: absolute;
+		left: 0;
+		top: .75em;
+		width: 18em;
+	}
+	section .productDetail header .icon-wrap {
+		float: left;
+	}
+	section .productDetail header h3, section .productDetail header h4 {
+		display: inline-block;
+		zoom: 1;*display:inline;
+		margin: 0 0 0 1em;
+		width: 67%;
+		font-style:normal;
+	}
+	.icon-wrap img {
+		margin: 0;
+	}
+	#mc_embed_signup_2 .mc-field-group label {
+		display:inline;
+	}
+	#mc_embed_signup_2 .mc-field-group input[type="email"] {
+		margin-bottom: 0;
+	}
+	section .productDetail p {
+		padding: 0 1em 0 19em;
+	}
+	.teamList > li, section #thecoins ul li {
+		width: 24%;
+	}
+	#knowledge .column {
+		width: 30%;
+		margin: 0 1.35%;
+	}
+	#knowledge .column h3 {
+		margin-bottom: 2em;
+	}
+	#knowledge .column p {
+		margin-bottom: 0;
+	}
+}
+@media only screen and (min-width: 849px) {
+	section {
+		width: 830px;
+	}
+	h1 {
+		font-size: 2.25em;
+	}
+	section #thecoins ul li p {
+		margin: 0;
+		left: 15%;
+	}
+	section#team header p {
+		width: 80%;
+		left: 10%;
+		padding: 1em;
+	}
+}
+@media only screen and (min-width: 980px) {
+	section header, #define, #knowledge .column {
+		max-width: 61%;
+	}
+	.teamList > li, section #thecoins ul li {
+		width: 19%;
+		margin: 1em 1%;
+	}
+}
+@media only screen and (min-width: 1080px) {
+	section {
+		width: 1064px;
+	}
+	section #thecoins ul li {
+		width: 9%;
+		margin: 1em 0 0 3%;
+	}
+	section #thecoins ul li:first-child {
+		margin-left: 0;
+	}
+	section #thecoins ul li img {
+		max-height: 100px;
+		width: auto;
+	}
+	section #thecoins ul li p {
+		left: 23%;
+	}
+}
+@media print,
+	   (-o-min-device-pixel-ratio: 5/4),
+	   (-webkit-min-device-pixel-ratio: 1.25),
+	   (min-resolution: 120dpi) {
+	/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster: h5bp.com/s */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	/*
+	 * Don't show links for images, or javascript/internal links
+	 */
+
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	thead {
+		display: table-header-group; /* h5bp.com/t */
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	@page {
+		margin: 0.5cm;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
