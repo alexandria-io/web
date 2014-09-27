@@ -1,0 +1,566 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #222;
+}
+
+html {
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Blocktech custom styles
+   ========================================================================== */
+body, html { margin: 0; padding: 0;}
+body { 
+	color: #464646;
+	border-top: 8px solid #92b4c6;
+}
+html, button, input, select, textarea, h1, h2, h3, h4, p {
+	font-family: Avenir-Book, avenir, 'Open Sans', open_sansregular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+section #thecoins {
+	margin: 3em 0 0;
+}
+section #thecoins header h3, section #thecoins header h4 {
+	margin: 0;
+	font-size: 0.875em;
+}
+section #thecoins ul, section #thecoins ul li {
+	list-style: none;
+	display: inline-block;
+	zoom:1;*display:inline;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+}
+section #thecoins ul {
+	text-align: center;
+	width: 100%;
+	margin: 1em 0;
+	position: relative;
+}
+section#jobs {
+	border-bottom: 0 none transparent;
+}
+#team ul {
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	padding: 0;
+	list-style-type:none;
+	text-align: center;
+}
+#team ul.teamList {
+	margin-top: 2em;
+}
+
+.teamList {
+	font-size: .875em;
+}
+.teamList > li, section #thecoins ul li {
+	width: 49%;
+	display: inline-block;
+	zoom: 1;*display:inline;
+	vertical-align: bottom;
+	margin: 1em 0 2em;
+	padding: 0 1px;
+}
+section #thecoins ul li {
+	margin: 1em 0;
+	width: 100%;
+	position: relative;
+}
+section#team header {
+	position: relative;
+}
+section #thecoins ul li p, section#team header p {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin-top: -1em;
+	margin-left:-25%;
+	padding: .5em 1em;
+	background-color: #fff;
+	border: 2px solid #92b4c6;
+	z-index: 500;
+	width: 260px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	text-align: center;
+	box-shadow: 2px 2px 1px rgba(20,20,20,.25);
+	-moz-box-shadow: 2px 2px 1px rgba(20,20,20,.25);
+	-webkit-box-shadow: 2px 2px 1px rgba(20,20,20,.25);
+}
+section #thecoins ul li p {
+	left: 15%;
+	margin-left: -2.5%;
+}
+
+section#team header p {
+	width: 100%;
+	top: 3em;
+	left: 0;
+	margin: 0;
+}
+section #thecoins ul li:hover > p, section#team header:hover > p {
+	display: block;
+}
+.teamMember {
+	text-align: center;
+}
+.teamMember .name {
+	font-size: 1.2em;
+}
+#team .avatar {
+	margin-bottom: .5em;
+}
+@-webkit-keyframes grayscale { 
+    0 { -webkit-filter:grayscale(100%); }  
+	100% { -webkit-filter:grayscale(0); }
+}
+@-moz-keyframes grayscale { 
+    0 { -moz-filter:grayscale(100%); }  
+	100% { -moz-filter:grayscale(0); }
+}
+
+@-o-keyframes grayscale { 
+    0 { -o-filter:grayscale(100%); }  
+	100% { -o-filter:grayscale(0); }
+}
+
+@-ms-keyframes grayscale { 
+    0 { -ms-filter:grayscale(100%); }  
+	100% { -ms-filter:grayscale(0); }
+}
+
+#team .avatar img {
+	width: 100%;
+	max-width: 120px;
+	height: auto;
+	margin: 0;
+	padding: 1px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ddd;
+	border-color: rgba(0,0,0,0.13);
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+}
+#team .avatar img:hover {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	animation: grayscale 1s ease-in-out;
+	-webkit-animation: grayscale 1s ease-in-out;
+	-moz-animation: grayscale 1s ease-in-out;
+	-ms-animation: grayscale 1s ease-in-out;
+	-o-animation: grayscale 1s ease-in-out;
+}
+.teamMeta1,
+.teamMeta2,
+.teamMeta3,
+.teamMeta4
+{
+	display: none;
+}
+#knowledge {
+	text-align: center;
+}
+#knowledge .column {
+	margin: 0 auto 1em;
+	overflow: hidden;
+	display: inline-block;
+	zoom:1;*display:inline;
+	vertical-align: top;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 0 1em;
+}
+#knowledge h3 {
+	margin: 1em 0;
+}
+#knowledge .column .icon-wrap {
+	margin-bottom: 1em;
+}
+footer {
+	width: 100%;
+	float: left;
+	margin-top: 2em;
+	padding: 1.25em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background: #242424;
+	color: #ccc;
+	text-align: center;
+	border-top: 4px solid #92b4c6;
+}
+footer p {
+	font-size: 0.875em;
+	margin: 0;
+	text-align: center;
+}
+
+#totop a {
+	letter-spacing: normal;
+	background: url('/img/arrow_sans_up_32.png') no-repeat center center transparent;
+	color: transparent;
+	width: 32px;
+	height: 32px;
+	opacity: .25;
+	margin: .25em;
+	border: 0 none transparent;
+}
+#totop a:hover {
+	opacity: .8;
+	border: 0 none transparent;
+}
+/* BUTTONS */
+.wsite-button {
+	display: inline-block;
+	zoom:1;*display:inline;
+	padding: 7px 12px;
+	background: #b0b0b0;
+	color: #fff;
+	font-weight: normal;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	border-radius: 2px;
+	transition: background 0.1s ease-in-out;
+	-webkit-transition: background 0.1s ease-in-out;
+	-moz-transition: background 0.1s ease-in-out;
+	-ms-transition: background 0.1s ease-in-out;
+	-o-transition: background 0.1s ease-in-out;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.wsite-button.secondary {
+	background-color: #92b4c6;
+	box-shadow: 0px 3px 0px 0px #3293ba;
+	-moz-box-shadow: 0px 3px 0px 0px #3293ba;
+	-webkit-box-shadow: 0px 3px 0px 0px #3293ba;
+	margin-top: .5em;
+}
+.wsite-button:hover, .wsite-button.secondary:hover {
+	background: #242424;
+	color:#fff;
+}
+
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *	`contenteditable` attribute is included anywhere else in the document.
+ *	Otherwise it causes space to appear at the top and bottom of elements
+ *	that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *	`:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+	*zoom: 1;
+}
+.anchor {
+	position: absolute;
+	top: -2em;
+	left: 0;
+}
+/* Responsive Design */
+@media only screen and (min-width: 260px) and (max-width: 378px) {
+	section {
+		width: 90%;
+	}
+	section #thecoins ul li p {
+		left:5%;
+		width: 95%;
+	}
+	#logo {
+		width: 40%;
+		min-height: 0;
+		max-height: 100%;
+		height: auto;
+	}
+	#social-icons li a {
+		margin: 0 0 1.6em .5em;
+	}
+}
+
+@media only screen and (min-width: 559px) {
+	section {
+
+	}
+	section #thecoins ul li {
+		margin: 1em 0;
+
+		position: relative;
+	}	
+	section #thecoins ul li p {
+		margin-left: -5%;
+		left: 0;
+	}
+}
+@media only screen and (min-width: 599px) {
+	section header, #define, #knowledge .column {
+		max-width: 100%;
+	}
+	#hero #mc_embed_signup .mc-field-group input[type="email"], #mc_embed_signup_2 .mc-field-group input[type="email"] {
+		width: 20em;
+	}
+	.teamList > li, section #thecoins ul li {
+		width: 32%;
+	}
+	section #thecoins ul li p {
+		margin-left: -35%;
+	}
+}
+@media only screen and (min-width: 709px) {
+	section {
+
+	}
+	section #thecoins ul li p {
+		margin-left:-15%;
+	}
+}
+@media only screen and (min-width: 800px) {
+
+		font-size: 1.75em;
+	}
+	#menu ul li {
+		display: inline-block;
+		zoom:1;*display:inline;
+	}
+	#menu ul li a {
+		margin: 0 0 0 2em;
+		font-size: 1em;
+		font-weight: normal;
+	}
+	section #thecoins ul {
+		margin-bottom: 0;
+		position: relative;
+	}
+	section #thecoins ul li {
+		position: initial;
+	}
+	section #thecoins ul li p {
+		width: 540px;
+		padding: 1em .65em;
+		top: 3em;
+		left: 25%;
+		margin-left:-12.5%;
+		margin-top: 0;
+	}
+	section .productDetail {
+		position: relative;
+		margin-top: 3em; 
+	}
+	section #liberdade.productDetail {
+		margin-top: 4em;
+	}
+	#liberdade div.smallTitle {
+		position: absolute;
+		top: -3em;
+	}
+	section .productDetail header {
+		position: absolute;
+		left: 0;
+		top: .75em;
+		width: 18em;
+	}
+	section .productDetail header .icon-wrap {
+		float: center;
+	}
+	section .productDetail header h3, section .productDetail header h4 {
+		display: inline-block;
+		zoom: 1;*display:inline;
+		margin: 0 0 0 1em;
+		font-style:normal;
+	}
+	.icon-wrap img {
+		margin: 0;
+	}
+	#mc_embed_signup_2 .mc-field-group label {
+		display:inline;
+	}
+	#mc_embed_signup_2 .mc-field-group input[type="email"] {
+		margin-bottom: 0;
+	}
+	section .productDetail p {
+		padding: 0 1em 0 19em;
+	}
+	.teamList > li, section #thecoins ul li {
+	}
+	#knowledge .column {
+		margin: 0 1.35%;
+	}
+	#knowledge .column h3 {
+		margin-bottom: 2em;
+	}
+	#knowledge .column p {
+		margin-bottom: 0;
+	}
+}
