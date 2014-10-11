@@ -544,7 +544,7 @@ footer p {
 }
 #totop a {
 	letter-spacing: normal;
-	background: url('/img/arrow_sans_up_32.png') no-repeat center center transparent;
+	background: url('../img/arrow_sans_up_32.png') no-repeat center center transparent;
 	color: transparent;
 	width: 32px;
 	height: 32px;
