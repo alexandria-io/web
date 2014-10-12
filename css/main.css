@@ -753,6 +753,10 @@ section .vcentered {
 	h1 {
 		font-size: 1.7em;
 	}
+	#head-video iframe {
+		width:520px;
+		height: 292px;
+	}
 	section {
 		width: 465px;
 		padding-right: 2em;
@@ -810,8 +814,8 @@ section .vcentered {
 		font-size: 1.75em;
 	}
 	#head-video iframe {
-		width:700px;
-		height: 393px;
+		width:552px;
+		height: 310px;
 	}
 	#menu ul li {
 		display: inline-block;
@@ -899,6 +903,10 @@ section .vcentered {
 	}
 	h1 {
 		font-size: 2.25em;
+	}
+	#head-video iframe {
+		width:700px;
+		height: 393px;
 	}
 	section #thecoins ul li p {
 		margin: 0;
