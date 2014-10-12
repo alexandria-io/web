@@ -130,6 +130,7 @@ h1 {
 }
 #head-video {
 	margin-bottom: 2em;
+	text-align: center;
 }
 h2, h3, h4, .teamMember .name {
 	color: #242424;
