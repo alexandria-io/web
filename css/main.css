@@ -118,15 +118,18 @@ h1 {
 	font-size: 1.65em;
 	margin-top: 0;
 	color: #444;	
-	text-transform: uppercase;
-	letter-spacing: 7px;
+//	text-transform: uppercase;
+	letter-spacing: .1em;
 	line-height: 1.65;
+	display: inline;
 }
 #logo {
 	max-width: initial;
-	min-height: 230px;
-	max-height: 370px;
-	margin: 1em auto 2em;
+	margin: 1em 1em 2em 0;
+	height:6em;
+}
+#head-video {
+	margin-bottom: 2em;
 }
 h2, h3, h4, .teamMember .name {
 	color: #242424;
@@ -181,7 +184,7 @@ section .icon-wrap, section .column p {
 	padding: 0;
 }
 #menu {
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 }
 #menu ul {
 	width: 100%;
@@ -722,18 +725,28 @@ section .vcentered {
 		width: 95%;
 	}
 	#logo {
-		width: 40%;
+/*		width: 40%;
 		min-height: 0;
 		max-height: 100%;
 		height: auto;
+*/
 	}
 	#social-icons li a {
 		margin: 0 0 1.6em .5em;
 	}
+	#head-video iframe {
+		width: 240px;
+		height: 135px;
+	}
+
 }
 @media only screen and (min-width: 379px) {
 	section {
 		width: 340px;
+	}
+	#head-video iframe {
+		width: 360px;
+		height: 202px;
 	}
 }
 @media only screen and (min-width: 479px) {
@@ -789,8 +802,16 @@ section .vcentered {
 	section {
 		width: 755px;
 	}
+	#logo {
+		margin: 1em 30px 2em 0;
+		height: 7em;
+	}
 	h1 {
 		font-size: 1.75em;
+	}
+	#head-video iframe {
+		width:700px;
+		height: 393px;
 	}
 	#menu ul li {
 		display: inline-block;
@@ -872,6 +893,9 @@ section .vcentered {
 @media only screen and (min-width: 849px) {
 	section {
 		width: 830px;
+	}
+	#logo {
+		height: 8em;
 	}
 	h1 {
 		font-size: 2.25em;

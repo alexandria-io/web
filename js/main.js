@@ -1,10 +1,10 @@
 var uagent = navigator.userAgent.toLowerCase();
 if (uagent.search("iphone") > -1) {
-	var logoObj = document.getElementById('logo');
+/*	var logoObj = document.getElementById('logo');
 	logoObj.style.width = '40%';
 	logoObj.style.height = 'auto';
 	logoObj.style.minHeight = '0';
-}
+*/}
 function resizeTheHero() {
 	if (uagent.search("iphone") == -1) {
 		var heroObj = document.getElementById('hero');
@@ -12,11 +12,11 @@ function resizeTheHero() {
 		if (heroObj.offsetHeight < window.innerHeight) {
 			heroObj.style.minHeight = '100%';
 			heroObj.style.height = window.innerHeight+'px';
-			logoObj.style.height = window.innerHeight/2.5+'px';
+//			logoObj.style.height = window.innerHeight/2.5+'px';
 		} else {
 			heroObj.style.height = 'initial';
 			heroObj.style.minHeight = window.innerHeight+'px';
-			logoObj.style.height = window.innerHeight/2.5+'px';
+//			logoObj.style.height = window.innerHeight/2.5+'px';
 		}
 	}
 }
