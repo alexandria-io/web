@@ -168,9 +168,11 @@ section {
 	position: relative;
 	width: 90%;
 }
+/*
 section#hardware {
 	overflow: hidden;
 }
+*/
 section header, #define, #knowledge .column {
 	margin: 0 auto;
 }
@@ -849,7 +851,8 @@ section .vcentered {
 		position: relative;
 		margin-top: 3em; 
 	}
-	section #cacheBox.productDetail header{
+
+/*	section #cacheBox.productDetail header{
 		position: initial;
 		top: initial;
 		left: initial;
@@ -860,6 +863,7 @@ section .vcentered {
 	section #cacheBox.productDetail p {
 		padding: 0;
 	}
+*/
 	section #liberdade.productDetail {
 		margin-top: 4em;
 	}
@@ -869,6 +873,9 @@ section .vcentered {
 	}
 	section #Altmarket.productDetail {
 		height: 150px;
+	}
+	section #cacheBox.productDetail {
+		height: 194px;
 	}
 	section .productDetail header {
 		position: absolute;
@@ -881,6 +888,9 @@ section .vcentered {
 	}
 	section .productDetail header .icon-wrap {
 		float: left;
+	}
+	section .productDetail#Altmarket header .icon-wrap, section .productDetail#cacheBox header .icon-wrap {
+		float: none;
 	}
 	section .productDetail header h3, section .productDetail header h4 {
 		display: inline-block;
