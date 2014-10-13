@@ -168,6 +168,9 @@ section {
 	position: relative;
 	width: 90%;
 }
+section#hardware {
+	overflow: hidden;
+}
 section header, #define, #knowledge .column {
 	margin: 0 auto;
 }
@@ -846,6 +849,17 @@ section .vcentered {
 		position: relative;
 		margin-top: 3em; 
 	}
+	section #cacheBox.productDetail header{
+		position: initial;
+		top: initial;
+		left: initial;
+		width: auto;
+		float: left;
+		padding-right: 2em;
+	}
+	section #cacheBox.productDetail p {
+		padding: 0;
+	}
 	section #liberdade.productDetail {
 		margin-top: 4em;
 	}
@@ -853,11 +867,17 @@ section .vcentered {
 		position: absolute;
 		top: -3em;
 	}
+	section #Altmarket.productDetail {
+		height: 150px;
+	}
 	section .productDetail header {
 		position: absolute;
 		left: 0;
 		top: .75em;
 		width: 18em;
+	}
+	section #Altmarket.productDetail header {
+		top: 0;
 	}
 	section .productDetail header .icon-wrap {
 		float: left;
