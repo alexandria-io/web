@@ -752,7 +752,7 @@ section .vcentered {
 	}
 	#head-video iframe {
 		width: 360px;
-		height: 202px;
+		height: 200px;
 	}
 }
 @media only screen and (min-width: 479px) {
@@ -761,7 +761,7 @@ section .vcentered {
 	}
 	#head-video iframe {
 		width:520px;
-		height: 292px;
+		height: 290px;
 	}
 	section {
 		width: 465px;
@@ -821,7 +821,7 @@ section .vcentered {
 	}
 	#head-video iframe {
 		width:552px;
-		height: 310px;
+		height: 308px;
 	}
 	#menu ul li {
 		display: inline-block;
@@ -937,7 +937,7 @@ section .vcentered {
 	}
 	#head-video iframe {
 		width:700px;
-		height: 393px;
+		height: 391px;
 	}
 	section #thecoins ul li p {
 		margin: 0;
