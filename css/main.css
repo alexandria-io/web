@@ -132,6 +132,18 @@ h1 {
 	margin-bottom: 2em;
 	text-align: center;
 }
+#head-video object {
+	display: inline-block;
+	overflow: hidden;
+}
+#head-video object > * {
+	top: -1px;
+	position: relative;
+}
+#head-video object embed {
+	width: 100%;
+	height: 100%;
+}
 h2, h3, h4, .teamMember .name {
 	color: #242424;
 }
@@ -740,7 +752,7 @@ section .vcentered {
 	#social-icons li a {
 		margin: 0 0 1.6em .5em;
 	}
-	#head-video iframe {
+	#head-video iframe, #head-video object {
 		width: 240px;
 		height: 135px;
 	}
@@ -750,7 +762,7 @@ section .vcentered {
 	section {
 		width: 340px;
 	}
-	#head-video iframe {
+	#head-video iframe, #head-video object {
 		width: 360px;
 		height: 200px;
 	}
@@ -759,9 +771,9 @@ section .vcentered {
 	h1 {
 		font-size: 1.7em;
 	}
-	#head-video iframe {
+	#head-video iframe, #head-video object {
 		width:520px;
-		height: 290px;
+		height: 292px;
 	}
 	section {
 		width: 465px;
@@ -819,9 +831,9 @@ section .vcentered {
 	h1 {
 		font-size: 1.75em;
 	}
-	#head-video iframe {
+	#head-video iframe, #head-video object {
 		width:552px;
-		height: 308px;
+		height: 310px;
 	}
 	#menu ul li {
 		display: inline-block;
@@ -829,7 +841,7 @@ section .vcentered {
 	}
 	#menu ul li a {
 		margin: 0 0 0 2em;
-		font-size: 1em;
+		font-size: .8em;
 		font-weight: normal;
 	}
 	section #thecoins ul {
@@ -935,10 +947,14 @@ section .vcentered {
 	h1 {
 		font-size: 2.25em;
 	}
-	#head-video iframe {
+	#head-video iframe, #head-video object {
 		width:700px;
-		height: 391px;
+		height: 394px;
 	}
+	#menu ul li a {
+		font-size: 1em;
+	}
+
 	section #thecoins ul li p {
 		margin: 0;
 		left: 15%;
