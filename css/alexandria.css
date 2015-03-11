@@ -189,9 +189,9 @@ header input.search:focus{
 	width: 362px;
 	height:55px;
 	position: absolute;
-	top: 5px;
-	left: 19px;
-	z-index: 10;
+	top: 9px;
+	left: 0;
+  	z-index: 10;
 	text-align: center;
 	font: 2em "Avenir-Medium";
 	margin-left: -1px;
@@ -203,7 +203,8 @@ header input.search:focus{
 	vertical-align: middle;
 }
 div#logoImg {
-	width: 52px;
+	width: 280px;
+	margin: 0 auto 1.25em;
 }
 div#logoWord {
 	width: 300px;
