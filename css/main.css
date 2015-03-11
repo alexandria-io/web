@@ -544,22 +544,22 @@ section #thecoins ul li:hover > p, section#team header:hover > p {
 	margin-bottom: 1em;
 }
 footer {
+	font-size: 0.875em;
 	width: 100%;
-	float: left;
-	margin-top: 2em;
-	padding: 1.25em;
+	position: fixed;
+	z-index: 500;
+	bottom: 0;
+	left: 0;
+	padding: .5em 1em;
+	line-height: 1.4;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	background: #242424;
-	color: #ccc;
-	text-align: center;
-	border-top: 4px solid #92b4c6;
+	background: #797979;
 }
-footer p {
-	font-size: 0.875em;
-	margin: 0;
-	text-align: center;
+footer, footer a {
+	color: #eee;
+	text-decoration: none;	
 }
 #totop {
 	position: fixed;
