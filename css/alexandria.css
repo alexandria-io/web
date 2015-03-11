@@ -194,7 +194,6 @@ header input.search:focus{
   	z-index: 10;
 	text-align: center;
 	font: 2em "Avenir-Medium";
-	margin-left: -1px;
 	margin-top: 6px;
 	cursor: pointer;
 }
@@ -208,7 +207,6 @@ div#logoImg {
 }
 div#logoWord {
 	width: 300px;
-	margin-left: -10px;
 }
 #logo img, #logo svg {
 	width: 100%;
@@ -1932,12 +1930,13 @@ div#lightbox #qrcode-lightbox {
 	}
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 660px) {
 	#logo {
-		width: 62px;
+		width: 100%;
 	}
 	#logoWord {
-		display: none !important;
+		position: relative;
+		margin: 0 auto;
 	}
 }
 

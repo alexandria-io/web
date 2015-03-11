@@ -313,20 +313,27 @@ section .icon-wrap, section .column p {
 	text-align: center;
 }
 #mc_embed_signup_2 form {
-	margin-top: 2em;
+	margin-top: 1.5em;
 }
 #mc_embed_signup_2 .mc-field-group label {
-	margin: 0 0 1em;
-	display: block;
-	font-style: italic;
-	margin-right: .5em;
+	 margin: 0 .5em .5em;
+	 display: inline-block;
+	 font-style: italic;
 }
 #hero #mc_embed_signup .mc-field-group input, #mc_embed_signup_2 .mc-field-group input {
 	display:inline-block;
 	zoom: 1;*display:inline;
 	width: auto;
-	margin: 0 .5em 1em;
+	margin: 0;
 	border: 1px solid #b0b0b0;
+}
+#mc_embed_signup_2 ul {
+  list-style: none;
+  text-align: left;
+  max-width: 311px;
+  margin: 1em auto;
+  padding: 0;
+  width: 100%;
 }
 #hero #mc_embed_signup .mc-field-group input[type="email"], #mc_embed_signup_2 .mc-field-group input[type="email"] {
 	width: 15em;
