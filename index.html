@@ -58,7 +58,7 @@
 					    </g>
 					</svg>
 				</div>
-								<p>ΛLΞXΛNDRIΛ is a distributed library for sharing and preserving art, history and culture. Imagine a platform like Youtube, Soundcloud, or Netflix, but without any of the costly server or bandwidth overhead. Users can self-publish anything, including videos, music, books, 3D printable, recipes, and more. Content creators have complete control over how their work is published and will be able to choose from several different monetization options.</p>
+				<p>ΛLΞXΛNDRIΛ is a distributed library for sharing and preserving art, history and culture. Imagine a platform like Youtube, Soundcloud, or Netflix, but without any of the costly server or bandwidth overhead. Users can self-publish anything, including videos, music, books, 3D printable, recipes, and more. Content creators have complete control over how their work is published and will be able to choose from several different monetization options.</p>
 				<p>ΛLΞXΛNDRIΛ harnesses the power of a few different distributed technologies, including bittorent and the Florincoin blockchain. Bittorent technology allows for the library to hold an inconceivable amount of content, while also ensuring that content is delivered efficiently when demand is highest. Florincoin’s blockchain provides a permanent, publicly accessible publishing ledger and payments layer which allows for data permanence while also creating a financial incentive for users to contribute to the growth and security of the platform.</p>
 				<p>What Bitcoin did for money, ΛLΞXΛNDRIΛ aims to do for digital content publishing and distribution by removing central points of failure and financially incentivizing users around the world to contribute to it.</p>
 <div id="mc_embed_signup_2" style="text-align:center;">
@@ -76,7 +76,11 @@
 				   </div>
 				</form>
 			</div>
-			<p><img src="img/libraryofalexandria.png"></p>
+			<p class="container">Support ΛLΞXΛNDRIΛ Development<br />
+			Bitcoin: <span class="selectable" id="alexandriaBTC" onclick="selectText('alexandriaBTC');">1AaMehNHLRDH4JPKaCkBjn8WFjJ8nEwvsr</span><br />
+			Florincoin: <span class="selectable" id="alexandriaFLO" onclick="selectText('alexandriaFLO');"> FHHAyE651vsd5tbBJbvswqZk9WaKpF89Ag</span>
+			</p>
+			<p class="largeImg"><img src="img/libraryofalexandria.png" /></p>
 			</div>
 		</main>
 		<footer id="footer">
@@ -84,15 +88,21 @@
 			<div class="pull-right"><a href="http://twitter.com/blocktechgroup" target="_blank">@blocktechgroup</a></div>
 		</footer>
 		<div id="app-shading" style="bottom: 0px;"></div>
-		<script>
-		 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		 })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
-		
-		 ga('create', 'UA-52157721-1', 'blocktech.com');
-		 ga('send', 'pageview');
-		
+
+		<!-- Piwik -->
+		<script type="text/javascript">
+		  var _paq = _paq || [];
+		  _paq.push(['trackPageView']);
+		  _paq.push(['enableLinkTracking']);
+		  (function() {
+			var u="//blocktech.com/stats/";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', 2]);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+		  })();
 		</script>
-</body>
+		<noscript><p><img src="//blocktech.com/stats/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+		<!-- End Piwik Code -->
+	</body>
 </html>

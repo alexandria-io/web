@@ -968,6 +968,19 @@ img.poster-frame {
 	text-align: left;
 	width: 81%;
 }
+p.container {
+	padding: 1.25em 2em;
+	background: #efefef;
+	margin: 1.8em auto 1em;
+	float: none;
+	width: 355px;
+	font-size: .875em;
+	line-height: initial;
+	text-align: center;
+}
+p.largeImg {
+	margin-top: 0;
+}
 
 /* MODALS */
 
@@ -1747,12 +1760,13 @@ div#lightbox #qrcode-lightbox {
 	padding: .5em 0 0;
 	white-space: nowrap;
 	border-bottom: 1px dotted #92b4c6;
-	margin: 0 1.25em;
 	cursor: pointer;
+}
+.bubble-modal .selectable {
+	margin: 0 1.25em;
 	font-size: .9em;
 	color: #919191;
 }
-
 /* TABLE LAYOUT */
 .tbl {
 	display: table;
@@ -1836,19 +1850,6 @@ div#lightbox #qrcode-lightbox {
 .wsite-button:hover, .wsite-button.secondary:hover {
 	background-color: #92b4c6;
 	color:#242424;
-}
-/* SWITCHES */
-.alex-switch {
-	width:54px;
-	height:32px;
-	background: url('../img/switch.svg') no-repeat center center transparent;
-	background-size: contain !important;
-	display: inline-block;
-	vertical-align: middle;
-	cursor: pointer;
-}
-.alex-switch.switched-on {
-	background: url('../img/switch-2.svg') no-repeat center center transparent;
 }
 
 /* ==========================================================================
