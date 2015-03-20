@@ -88,7 +88,20 @@
 			<div class="pull-right"><a href="http://twitter.com/blocktechgroup" target="_blank">@blocktechgroup</a></div>
 		</footer>
 		<div id="app-shading" style="bottom: 0px;"></div>
-
+		
+<script type="text/javascript">
+function selectText(containerid) {
+	if (document.selection) {
+	    var range = document.body.createTextRange();
+	    range.moveToElementText(document.getElementById(containerid));
+	    range.select();
+	} else if (window.getSelection) {
+	    var range = document.createRange();
+	    range.selectNode(document.getElementById(containerid));
+	    window.getSelection().addRange(range);
+	}
+}
+</script>
 		<!-- Piwik -->
 		<script type="text/javascript">
 		  var _paq = _paq || [];
