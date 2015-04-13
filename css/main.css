@@ -128,6 +128,26 @@ h1 {
 	margin: 1em 1em 2em 0;
 	height:6em;
 }
+.section-title {
+	margin: 1.5em 0 .5em;
+}
+.support-container {
+	padding: 1.25em 2em;
+	background: #efefef;
+	margin: 0 auto 1em;
+	float: none;
+	width: 355px;
+	font-size: .875em;
+	line-height: initial;
+	text-align: center;
+}
+.support-wrap {
+	margin: 0 0 1.5em;
+}
+.qr-wrap, #paypal-form {
+	display: inline-block;
+	margin: .5em 0 0;
+}
 #head-video {
 	margin-bottom: 2em;
 	text-align: center;
@@ -301,7 +321,7 @@ section .icon-wrap, section .column p {
 	white-space: nowrap;
 	width: auto;
 }
-#hero #mc_embed_signup form, #mc_embed_signup_2 form {
+#hero #mc_embed_signup form {
 	margin: 0;
 	padding: 0;
 }
@@ -312,8 +332,11 @@ section .icon-wrap, section .column p {
 	padding: 0;
 	text-align: center;
 }
-#mc_embed_signup_2 form {
-	margin-top: 1.5em;
+#mc_embed_signup_2 form#mc-embedded-subscribe-form {
+  margin-top: 1em;
+  padding: 1.5em;
+  border: 1px solid #979797;
+  display: inline-block;
 }
 #mc_embed_signup_2 .mc-field-group label {
 	 margin: 0 .5em .5em;
@@ -331,7 +354,7 @@ section .icon-wrap, section .column p {
   list-style: none;
   text-align: left;
   max-width: 311px;
-  margin: 1em auto;
+  margin: .5em auto;
   padding: 0;
   width: 100%;
 }

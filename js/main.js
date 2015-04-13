@@ -1,57 +1,24 @@
-var uagent = navigator.userAgent.toLowerCase();
-if (uagent.search("iphone") > -1) {
-/*	var logoObj = document.getElementById('logo');
-	logoObj.style.width = '40%';
-	logoObj.style.height = 'auto';
-	logoObj.style.minHeight = '0';
-*/}
-function resizeTheHero() {
-	if (uagent.search("iphone") == -1) {
-		var heroObj = document.getElementById('hero');
-		var logoObj = document.getElementById('logo');
-		if (heroObj.offsetHeight < window.innerHeight) {
-			heroObj.style.minHeight = '100%';
-			heroObj.style.height = window.innerHeight+'px';
-//			logoObj.style.height = window.innerHeight/2.5+'px';
-		} else {
-			heroObj.style.height = 'initial';
-			heroObj.style.minHeight = window.innerHeight+'px';
-//			logoObj.style.height = window.innerHeight/2.5+'px';
+var fadeTimer = 200;
+// DOCUMENT READY JQUERY STUFF
+$(document).ready(function(){
+	var FLOaddress = document.getElementById('alexandriaFLO').innerHTML;
+	var FLOqrWrapper = document.getElementById('flo-qr-wrap');
+	GenerateQR(FLOaddress, FLOqrWrapper, 100, 100, 'florincoin');
+	var BTCaddress = document.getElementById('alexandriaBTC').innerHTML;
+	var BTCqrWrapper = document.getElementById('btc-qr-wrap');
+	GenerateQR(BTCaddress, BTCqrWrapper, 100, 100, 'bitcoin');
+	// Modal controls
+	$(document).on("keyup", function (e) {
+		var code = e.keyCode || e.which;
+		if (code == 27) {
+			// esc pressed
+			if ($('#lightbox').css('display') == 'block') {
+				$('#lightbox').fadeOut(fadeTimer);
+			}
 		}
-	}
-}
-document.addEventListener('DOMContentLoaded', function(){
-	resizeTheHero();
+	});	
 });
-window.addEventListener('resize', function(event){
-	resizeTheHero();
-});
-
-var clickcoin = document.getElementsByClassName('cryptocoin');
-function toArray(obj) {
-  var array = [];
-  for (var i = obj.length >>> 0; i--;) { 
-	array[i] = obj[i];
-  }
-  return array;
-}
-toArray(clickcoin);
-var arrayLength = clickcoin.length;
-if ("ontouchstart" in document.documentElement) {
-	// Touch devices
-	for (var i = 0; i < arrayLength; i++) {
-		myTap = new Tap(clickcoin[i]);
-		clickcoin[i].children[2].style.display = 'none';
-		clickcoin[i].addEventListener('tap', tapDidOccur, false); 
-	}
-} else {
-	// Others devices
-}
-function tapDidOccur (e) {
-	var cointap = e.target.parentElement.children;
-	cointap[2].style.display = (cointap[2].style.display == "none") ? "block" : "none";
-}
-// SELECT TEXT ON SINGLE CLICK
+// SELECTABLE TEXT
 function selectText(containerid) {
 	if (document.selection) {
 	    var range = document.body.createTextRange();
@@ -62,4 +29,30 @@ function selectText(containerid) {
 	    range.selectNode(document.getElementById(containerid));
 	    window.getSelection().addRange(range);
 	}
+}
+// Generate QR CODE
+function GenerateQR(address, wrapper, qrw, qrh, crypto) {
+	wrapper.innerHTML = '';
+	wrapper.setAttribute('onclick','loadQR("'+crypto+':'+address+'")');
+	var qrcode = new QRCode(wrapper, {
+		text: crypto+':'+address,
+		width: qrw,
+		height: qrh,
+		colorDark : "#000000",
+		colorLight : "#FFFFFF",
+		correctLevel : QRCode.CorrectLevel.H
+	});
+}
+// DISPLAY QR CODE FOR BTC
+function loadQR(obj) {
+	$('#lightbox').html('<div id="qrcode-lightbox"></div>');
+	var qrcode = new QRCode("qrcode-lightbox", {
+		text: obj,
+		width: 400,
+		height: 400,
+		colorDark : "#000000",
+		colorLight : "#FFFFFF",
+		correctLevel : QRCode.CorrectLevel.H
+	});
+	$('#lightbox').fadeIn(fadeTimer);
 }
