@@ -104,11 +104,6 @@ html, button, input, select, textarea, h2, h3, h4, p, text {
 	font-weight: 400;
 	font-style: normal;
 }
-h1 {
-	font-family: Avenir-Medium, avenir, 'Open Sans', open_sansregular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: normal
-	font-style: normal;
-}
 img {
 	max-width: 100%;
 	max-height: 100%;
@@ -116,6 +111,9 @@ img {
 }
 h1, h2, h3, h4 {
 	text-align: center;
+	font-family: Avenir-Book, avenir, 'Open Sans', open_sansregular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
 }
 h1 {
 	font-size: 1.65em;
@@ -125,7 +123,9 @@ h1 {
 	letter-spacing: 7px;
 	line-height: 1.65;
 }
-
+h2 {
+	text-align: left;	
+}
 /* HEADER */
 header {
 	position: fixed;
@@ -144,6 +144,7 @@ header {
 	-webkit-box-sizing: border-box;
 	-webkit-app-region: drag;
 	-webkit-user-select: none;
+	text-align: center;
 }
 
 header #search, header #header-menu {
@@ -183,19 +184,17 @@ header input.search#search-main {
 	padding-left: 40px;
 }
 header input.search:focus{
-		box-shadow: 0 0 5px rgba(20, 20, 20, 0.2);	
+	box-shadow: 0 0 5px rgba(20, 20, 20, 0.2);	
 }
 #logo {
 	width: 362px;
-	height:55px;
-	position: absolute;
-	top: 5px;
-	left: 0;
-  	z-index: 10;
-	text-align: center;
+	  height: 50px;
+	  margin-bottom: 0;
+  	text-align: center;
 	font: 2em "Avenir-Medium";
-	margin-top: 6px;
+	margin-top: 12px;
 	cursor: pointer;
+	display: inline-block;
 }
 #logo div {
 	display: inline-block;
@@ -704,12 +703,12 @@ ul#media-type-select-list {
 #browse-media {
 	padding-top: 10px;
 }
-.wrapper, #add-media > * {
+.wrapper {
 	width: 98%;
 	display: inline-block;
 	zoom: 1;*display:inline;
-	max-width: 880px;
 	padding-bottom: 2em;
+	position: relative;
 }
 .row.media-list {
 	width: 100%;
@@ -963,10 +962,10 @@ img.poster-frame {
 
 /* ABOUT VIEW */
 #about .wrapper {
-	margin-top: 30px;
+	margin-top: 1em;
 	line-height: 1.8;
-	text-align: left;
-	width: 81%;
+	text-align: center;
+	width: 90%;
 }
 p.container {
 	padding: 1.25em 2em;
@@ -1629,7 +1628,7 @@ ul.distNetList li {
 /* APPLICATION */
 #app-shading {
 	position: fixed;
-	top: 70px;
+	top: 50px;
 	bottom: 0;
 	right: 0;
 	left: 0;
@@ -1757,7 +1756,7 @@ div#lightbox #qrcode-lightbox {
 }
 .selectable {
 	display: inline-block;
-	padding: .5em 0 0;
+	padding: 0;
 	white-space: nowrap;
 	border-bottom: 1px dotted #92b4c6;
 	cursor: pointer;

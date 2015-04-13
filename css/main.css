@@ -22,7 +22,9 @@ html {
 	font-size: 1em;
 	line-height: 1.5;
 }
-
+p {
+	margin-top: .5em;
+}
 b, strong {
 	font-size: 1.1em;
 }
@@ -132,18 +134,30 @@ h1 {
 	margin: 1em 1em 2em 0;
 	height:6em;
 }
+#content-wrap {
+	
+}
+#sidebar {
+	display: inline-block;
+	width: 318px;
+	text-align: center;
+	margin-top: 1em;
+}
 .section-title {
-	margin: 1.5em 0 .5em;
+	margin: 1em 0 .5em;
 }
 .support-container {
-	padding: 1.25em 2em;
-	background: #efefef;
+	padding: 1.25em 1.5em 2em;
+	background: RGBA(239, 239, 239, .6);
 	margin: 0 auto 1em;
 	float: none;
-	width: 355px;
 	font-size: .875em;
 	line-height: initial;
 	text-align: center;
+	display: inline-block;
+}
+.support-container strong, .support-container span {
+  display: block;
 }
 .support-wrap {
 	margin: 0 0 1.5em;
@@ -188,7 +202,7 @@ h4 {
 	font-size: .9em;
 }
 p {
-	margin: 0 0 1em;
+	margin: .5em 0 1em;
 	text-align: left;
 }
 section {
@@ -337,15 +351,18 @@ section .icon-wrap, section .column p {
 	text-align: center;
 }
 #mc_embed_signup_2 form#mc-embedded-subscribe-form {
-  margin-top: 1em;
-  padding: 1.5em;
+  padding: 1.25em 1.5em;
   border: 1px solid #979797;
   display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 #mc_embed_signup_2 .mc-field-group label {
 	 margin: 0 .5em .5em;
 	 display: inline-block;
-	 font-style: italic;
+	font-size: .875em;
 }
 #hero #mc_embed_signup .mc-field-group input, #mc_embed_signup_2 .mc-field-group input {
 	display:inline-block;
@@ -836,9 +853,6 @@ section .vcentered {
 	section header, #define, #knowledge .column {
 		max-width: 100%;
 	}
-	#hero #mc_embed_signup .mc-field-group input[type="email"], #mc_embed_signup_2 .mc-field-group input[type="email"] {
-		width: 20em;
-	}
 	.teamList > li, section #thecoins ul li {
 		width: 32%;
 	}
@@ -864,6 +878,15 @@ section .vcentered {
 	}
 	h1 {
 		font-size: 1.75em;
+	}
+	#content-wrap {
+		width: calc(100% - 350px);
+	}
+	#sidebar {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin-top: 0;
 	}
 	#head-video iframe, #head-video object {
 		width:552px;
