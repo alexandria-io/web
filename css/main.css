@@ -144,7 +144,29 @@ h1 {
 	margin-top: 1em;
 }
 .section-title {
-	margin: 1em 0 .5em;
+	margin: 1em 0 .25em;
+}
+#fund-progress-wrap {
+  height: 2em;
+  margin-bottom: .25em;
+  border: 1px solid #979797;
+  position: relative;
+}
+#fund-progress-wrap span {
+	position: relative;
+	z-index: 100;
+	line-height: 2em;
+}
+#fund-progress-bar {
+	background-color: #92b4c6;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+#fund-details {
+	margin-bottom: 1em;
+	line-height: 1.6;
+	font-size: .875em;
 }
 .support-container {
 	padding: 1.25em 1.5em 2em;

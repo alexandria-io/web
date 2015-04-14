@@ -65,10 +65,14 @@
 					</div>
 				-->
 					<h2>What is Alexandria?</h2>
-					<p>A distributed library for sharing and preserving art, history and culture. Imagine a platform like Youtube, Soundcloud, or Netflix - without any of the costly server or bandwidth overhead. Users can self-publish anything, including videos, music, books, 3D-printables, recipes, and more. Content creators have complete control over how their work is published with several different monetization options. Only the publisher has the power to remove her/his content from the library.</p>
+					<p>An open-source distributed library for sharing and preserving art, history and culture. Imagine a platform like Youtube, Soundcloud, or Netflix - without any of the costly server or bandwidth overhead. Users can self-publish anything, including videos, music, books, 3D-printables, recipes, and more. Content creators have complete control over how their work is published with several different monetization options. Only the publisher has the power to remove her/his content from the library.</p>
 					<p>What Bitcoin did for money, Alexandria will do for digital content publishing and distribution by removing central points of failure and financially incentivizing users around the world.</p>
 					<h2>How does it work?</h2>
-					<p>Alexandria harnesses the power of distributed technologies, including bittorent and the Bitcoin and Florincoin blockchains. Bittorent technology allows for the library to hold an inconceivable amount of content, while also ensuring that content is delivered efficiently when demand is highest. Florincoin’s blockchain provides a permanent, publicly accessible publishing ledger and payments layer which allows for data permanence while also creating a financial incentive for users to contribute to the growth and security of the platform.</p>
+					<p>Alexandria harnesses the power of distributed technologies, including bittorent and the Bitcoin and Florincoin blockchains. Bittorent technology allows for the library to hold an inconceivable amount of content, while also ensuring that content is delivered efficiently when demand is highest. Bitcoin is optionally used for audience-to-publisher payments and Florincoin’s blockchain provides a permanent, publicly accessible publishing ledger and payments layer creating data permanence while also creating a financial incentive for users to contribute to the growth and security of the platform.</p>
+					<div style="display:none">
+					<h2>Crowdfunding System D</h2>
+					<p>In keeping with the open-source and peer-to-peer ideologies, Alexandria is a crowdfunded project. </p>
+					</div>
 				</div>
 				<div id="sidebar">
 					<div id="mc_embed_signup_2" style="text-align:center;">	
@@ -87,11 +91,19 @@
 						</form>
 					</div>
 				<h3 class="section-title">Support Alexandria Development</h3>
+				<div id="fund-progress-wrap">
+					<div id="fund-progress-bar"></div>
+				</div>
+				<div id="fund-details">
+					<div>Goal: $20,000</div>
+					<div><span id="daysleft"></span> Days Left</div>
+				</div>
 				<div class="support-container">
 					<div id="btc-support-wrap" class="support-wrap">
 						<strong>Bitcoin:</strong>
 						<span class="selectable" id="alexandriaBTC" onclick="selectText('alexandriaBTC');">1AaMehNHLRDH4JPKaCkBjn8WFjJ8nEwvsr</span>
 						<div id="btc-qr-wrap" class="qr-wrap"></div>
+						<div id="btc-received"></div>
 					</div>
 					<div id="flo-support-wrap" class="support-wrap">
 						<strong>Florincoin:</strong>
@@ -109,7 +121,7 @@
 					</div>
 				</div>
 			</div>
-			<p class="largeImg"><img src="img/libraryofalexandria.png" /></p>
+<!--			<p class="largeImg"><img src="img/libraryofalexandria.png" /></p> -->
 			</div>
 		</main>
 		<footer id="footer">
@@ -118,9 +130,11 @@
 		</footer>
 		<div id="app-shading" style="bottom: 0px;"></div>
 		<div id="lightbox" onclick="$(this).fadeOut(fadeTimer);"></div>
+		<div id="sketchpad"></div>
 
 		<script src="js/jquery.min.js"></script>
 		<script src="js/qrcode.min.js"></script>
+		<script src="js/jquery.xdomainajax.js"></script>
 		<script src="js/main.js" type="text/javascript"></script>
 
 		<!-- Piwik -->
