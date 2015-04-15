@@ -5,10 +5,10 @@ var BTCUSD;
 $(document).ready(function(){
 	var FLOaddress = document.getElementById('alexandriaFLO').innerHTML;
 	var FLOqrWrapper = document.getElementById('flo-qr-wrap');
-	GenerateQR(FLOaddress, FLOqrWrapper, 100, 100, 'florincoin');
+//	GenerateQR(FLOaddress, FLOqrWrapper, 64, 64, 'florincoin');
 	var BTCaddress = document.getElementById('alexandriaBTC').innerHTML;
 	var BTCqrWrapper = document.getElementById('btc-qr-wrap');
-	GenerateQR(BTCaddress, BTCqrWrapper, 100, 100, 'bitcoin');
+	GenerateQR(BTCaddress, BTCqrWrapper, 80, 80, 'bitcoin');
 	// Modal controls
 	$(document).on("keyup", function (e) {
 		var code = e.keyCode || e.which;
@@ -21,7 +21,7 @@ $(document).ready(function(){
 	});
 
 // FUNDING + CRYPTO
-	var daysLeft = Math.round(46 - ((((Date.parse(new Date()) - 1429038124000)/100)/60)/60)/24);
+	var daysLeft = Math.round(46 - ((((Date.parse(new Date()) - 1429038124000)/1000)/60)/60)/24);
 	document.getElementById('daysleft').innerHTML = daysLeft;
 
 	$.ajax({
@@ -54,7 +54,7 @@ function populateProgress() {
 	var BTCfunded = BTCRec/100000000;
 	var FLOfunded = 0;
 	var PayPalfunded = 0;
-	var fundGoal = 20000;
+	var fundGoal = 24000;
 	var funded = BTCfunded + FLOfunded + PayPalfunded;
 	var fundedToGoal = (funded/fundGoal)*100;
 	var fundedDisplay = Math.round(fundedToGoal*100)/100;

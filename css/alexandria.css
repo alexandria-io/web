@@ -74,6 +74,7 @@ h2 {
 
 h3{
 	clear:both;
+	margin-top: 1em;
 }
 
 /* Disable Overhang / Bounce */
@@ -86,7 +87,7 @@ html*body {
 }
 
 ul {
-  
+  margin-top: .25em;
 }
 
 /* ==========================================================================
@@ -123,7 +124,7 @@ h1 {
 	letter-spacing: 7px;
 	line-height: 1.65;
 }
-h2 {
+h2, h3 {
 	text-align: left;	
 }
 /* HEADER */

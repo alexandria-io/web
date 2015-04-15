@@ -129,25 +129,39 @@ h1 {
 	line-height: 1.65;
 	display: inline;
 }
+a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 1px solid #979797;
+	display: inline-block;
+	line-height: 1;
+}
 #logo {
 	max-width: initial;
 	margin: 1em 1em 2em 0;
 	height:6em;
 }
 #content-wrap {
-	
+	text-align: left;
+	margin-bottom: 3em;
 }
 #sidebar {
-	display: inline-block;
+	display: block;
 	width: 318px;
 	text-align: center;
 	margin-top: 1em;
 }
 .section-title {
-	margin: 1em 0 .25em;
+	margin: .5em 0 0;
+	text-align: center;
+}
+.sectionSep {
+	clear: both;
+	margin: 2em 0;
 }
 #fund-progress-wrap {
-  height: 2em;
+  height: 1.5em;
+font-size: .875em;
   margin-bottom: .25em;
   border: 1px solid #979797;
   position: relative;
@@ -155,7 +169,7 @@ h1 {
 #fund-progress-wrap span {
 	position: relative;
 	z-index: 100;
-	line-height: 2em;
+	line-height: 1.5;
 }
 #fund-progress-bar {
 	background-color: #92b4c6;
@@ -164,12 +178,12 @@ h1 {
 	top: 0;
 }
 #fund-details {
-	margin-bottom: 1em;
+	margin-bottom: .5em;
 	line-height: 1.6;
 	font-size: .875em;
 }
 .support-container {
-	padding: 1.25em 1.5em 2em;
+	padding: .5em 1.5em;
 	background: RGBA(239, 239, 239, .6);
 	margin: 0 auto 1em;
 	float: none;
@@ -187,6 +201,7 @@ h1 {
 .qr-wrap, #paypal-form {
 	display: inline-block;
 	margin: .5em 0 0;
+	cursor: pointer;
 }
 #head-video {
 	margin-bottom: 2em;
@@ -338,7 +353,7 @@ section .icon-wrap, section .column p {
 #mc_embed_signup_2 .mc-field-group input {
 	display: block;
 	width: 100%;
-	padding: 8px 0;
+	padding: 5px 0;
 	text-indent: 2%;
 }
 #mc_embed_signup_2 .button {
@@ -373,7 +388,7 @@ section .icon-wrap, section .column p {
 	text-align: center;
 }
 #mc_embed_signup_2 form#mc-embedded-subscribe-form {
-  padding: 1.25em 1.5em;
+  padding: .5em 1em;
   border: 1px solid #979797;
   display: inline-block;
   width: 100%;
@@ -400,12 +415,13 @@ section .icon-wrap, section .column p {
   margin: .5em auto;
   padding: 0;
   width: 100%;
+  overflow: hidden;
 }
 #hero #mc_embed_signup .mc-field-group input[type="email"], #mc_embed_signup_2 .mc-field-group input[type="email"] {
-	width: 15em;
+	width: 100%;
 }
 #hero #mc_embed_signup .mc-field-group input.button, #mc_embed_signup_2 .mc-field-group input.button {
-	height: 2.65em;
+	height: auto;
 	margin: 0;
 	padding: 4px 12px;
 	background-color: #b0b0b0;
@@ -419,6 +435,8 @@ section .icon-wrap, section .column p {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	cursor: pointer;
+	line-height: initial;
+	font-size: .875em;
 }
 #hero #mc_embed_signup .mc-field-group input.button:hover, #mc_embed_signup_2 .mc-field-group input.button:hover {
 	background-color: #242424;
@@ -905,9 +923,9 @@ section .vcentered {
 		width: calc(100% - 350px);
 	}
 	#sidebar {
-		position: absolute;
-		top: 0;
-		right: 0;
+		position: fixed;
+		top: 80px;
+		right: 3%;
 		margin-top: 0;
 	}
 	#head-video iframe, #head-video object {
