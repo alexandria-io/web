@@ -145,14 +145,12 @@ a {
 	text-align: left;
 	margin-bottom: 3em;
 }
-#video-embed {
+#video-embed, #video-embed iframe {
 	width: 280px;
-	height: 210px;
-	margin: 1em auto;
+	height: 157px;
 }
-#video-embed iframe {
-	width: 280px;
-	height: 210px;
+#video-embed {
+	margin: 1.5em auto 2em;
 }
 #screensWrap {
 	text-align: center;
@@ -902,7 +900,7 @@ section .vcentered {
 	}
 	#video-embed, #video-embed iframe {
 		width: 420px;
-		height: 315px;
+		height: 246px;
 	}
 	section {
 		width: 465px;
@@ -939,6 +937,10 @@ section .vcentered {
 	}
 }
 @media only screen and (min-width: 709px) {
+	#video-embed, #video-embed iframe {
+//		width: 640px;
+//		height: 360px;
+	}
 	section {
 		width: 670px;
 	}
@@ -1110,6 +1112,10 @@ section .vcentered {
 	}
 }
 @media only screen and (min-width: 1080px) {
+	#video-embed, #video-embed iframe {
+		width: 640px;
+		height: 360px;
+	}
 	section {
 		width: 1064px;
 	}
@@ -1126,6 +1132,12 @@ section .vcentered {
 	}
 	section #thecoins ul li p {
 		left: 23%;
+	}
+}
+@media only screen and (min-width: 1360px) {
+	#video-embed, #video-embed iframe {
+		width: 853px;
+		height: 480px;
 	}
 }
 @media print,
