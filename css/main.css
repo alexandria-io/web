@@ -145,6 +145,37 @@ a {
 	text-align: left;
 	margin-bottom: 3em;
 }
+#video-embed {
+	width: 280px;
+	height: 210px;
+	margin: 1em auto;
+}
+#video-embed iframe {
+	width: 280px;
+	height: 210px;
+}
+#screensWrap {
+	text-align: center;
+}
+#screenshots {
+	list-style-type: none;
+	margin: .5em 0;
+	padding: 0; 
+	display: inline-block;
+}
+#screenshots li {
+	display: inline-block;
+	margin: 0 1em 1em;
+	cursor: pointer;
+	height: 146px;
+	width: 240px;
+	overflow: hidden;
+	border: 1px solid #979797;
+}
+#screenshots li img {
+	width: 100%;
+	max-height: initial;
+}
 #sidebar {
 	display: block;
 	width: 318px;
@@ -157,7 +188,7 @@ a {
 }
 .sectionSep {
 	clear: both;
-	margin: 2em 0;
+	margin: 2.5em 0;
 }
 #fund-progress-wrap {
   height: 1.5em;
@@ -169,7 +200,10 @@ font-size: .875em;
 #fund-progress-wrap span {
 	position: relative;
 	z-index: 100;
-	line-height: 1.5;
+	line-height: 1.2;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
 }
 #fund-progress-bar {
 	background-color: #92b4c6;
@@ -865,6 +899,10 @@ section .vcentered {
 	#head-video iframe, #head-video object {
 		width:520px;
 		height: 292px;
+	}
+	#video-embed, #video-embed iframe {
+		width: 420px;
+		height: 315px;
 	}
 	section {
 		width: 465px;
