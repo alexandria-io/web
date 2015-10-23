@@ -165,14 +165,46 @@ a {
 	display: inline-block;
 	margin: 0 1em 1em;
 	cursor: pointer;
-	height: 146px;
-	width: 240px;
+	height: 106px;
+	width: 180px;
 	overflow: hidden;
 	border: 1px solid #979797;
 }
 #screenshots li img {
 	width: 100%;
 	max-height: initial;
+}
+#DownloadLabel {
+    text-align: center;
+}
+#dl-label {
+    list-style-type: none;
+    margin: .5em 0;
+    padding: 0;
+    width: 240px;
+    display: inline-block;
+}
+#Downloads {
+    text-align: center;
+}
+#dl-links {
+    list-style-type: none;
+    margin: .5em 0;
+    padding: 0;
+    display: inline-block;
+}
+#dl-links li {
+    display: inline-block;
+    margin: 0 1em 1em;
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+    border: 0px solid #979797;
+}
+#dl-links li img {
+    width: 100%;
+    max-height: initial;
 }
 #sidebar {
 	display: block;
